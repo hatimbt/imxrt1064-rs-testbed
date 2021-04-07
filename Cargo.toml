@@ -1,0 +1,29 @@
+[package]
+name = "imxrt1064-rs-testbed"
+version = "0.1.0"
+authors = ["Hatim Thayyil <hatimbt@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# This crate no longer needed as it is included in the imxrt-hal crate
+#[dependencies.imxrt-ral]
+#version = "0.4.2"
+#features = ["imxrt1064", "rt"]
+
+[dependencies.cortex-m]
+version = "0.7.2"
+
+[dependencies.cortex-m-rt]
+features = ["device"]
+version = "0.6.13"
+
+[dependencies.teensy4-fcb]
+version = "0.3.0"
+
+[dependencies.teensy4-panic]
+version = "0.1"
+
+[dependencies.imxrt-hal]
+version = "0.4"
+features = ["imxrt1062", "rt"] # "rt" flag optional
